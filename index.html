@@ -1,15 +1,456 @@
-
 <!DOCTYPE html>
-<html>
-<body>
+<html class="no-js" lang="en">
+<head>
 
-<img src="images.png" alt="Mountain View" style="width:1500px;height:150px;">
+<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "h2.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "h1.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "h3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "h5.jpg"
+
+</script>
 
 
-<iframe src="https://docs.google.com/forms/d/1WY1gkGZ3R3jrarC57h-gl1LbTZiK1THbOScWm39jLGI/viewform?embedded=true" 
-width="500" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
-<IMG STYLE="position:absolute; TOP:745px; LEFT:0px; WIDTH:1000px; HEIGHT:300px" SRC="index.png">
+<meta charset="utf-8">
+
+<style type="text/css">
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        width: 100px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        line-height: 21px;
+    }
+ 
+   
+    ul li ul{
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul{
+        display: block; /* display the dropdown */
+    }
+
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #0000ff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}	
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border: 1px solid #0000ff;
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}
+div.padding {
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+
+div.pad{
+    background-color: grey;
+}
+
+div.bg  {
+    background-image: url("h2.gif");
+	 id="slide" ;
+	 width="1520";
+	 height="500" ;
+    }
+
+</style>
+
+        <title>buidling material</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="http://www.onedirectionmusic.com/assets/gfx/favicon.ico" />
+
+		<meta property="fb:admins" content="517712367,706671479,552165995">
+        <meta property="og:title" content="buiding material" />
+        <meta property="og:site_name" content="building material" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="h1.jpg" />
+        <meta property="og:url" content="http://takeoff.com" />
+        <meta property="og:description" content="The official website" />
+        <meta name="description" content="The official website" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="deepali swati abhishek" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@onedirection" />
+        <meta name="twitter:title" content="building material" />
+        <meta name="twitter:description" content="The official website" />
+        <meta name="twitter:creator" content="@onedirection" />
+        <meta name="twitter:image:src" content="h1.jpg" />
+        
+		<link href="oned1.css" rel="stylesheet" type="text/css" />
+		<link href="oned2.css" rel="stylesheet" type="text/css" />
+         <link href="c1.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+  
+  
+  
+  
+  
+  
+
+
+  
+<body class="duo home-section">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+   <script>
+        var cid = '';
+    </script>
+<script>
+    var skip_header = 0;
+</script>
+
+
+
+	<nav id="main">
+		<ul class="menu">
+			<img src="a11.jpg" align="center" width="200" height="80" />
+		</ul>
+		<span></span>
+	</nav>
+</header>
+
+			</div>	
+					<img src="h4.jpg" id="slide" width="1520" height="500" />
+		
+
+
+
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<3)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+
+
+<div class="header-spacer"></div>
+
+
+<header id="sticky">
+	<h1 class="logo">
+		<a href="http://www.takeoff.net.in">construction material</a>
+	</h1>
+	<div class="button-holder"><button class="menu"><i class="icon-menu"></i><i class="icon-close hide"></i></button></div>
+</header>
+<header id="nav" class="">
+<link rel="publisher" href="https://plus.google.com/+pepperfry"/>
+<div class="header-wrap">
+      
+	<nav id="main">
+		<ul class="menu">
+			<li class="alpha hover-cycle"><a class="menu1" href="/in/music">Construction</a></li>
+             
+			 <li class="hover-cycle"><a class="menu2" href="/in/band">Paints</a></li>
+			<li class="hover-cycle"><a class="menu3" href="/in/tour">Kitchen</a></li>
+			<li class="hover-cycle"><a class="menu4" href="/in/journal">Living</a></li>
+			<li class="hover-cycle"><a class="menu5" href="/in/shop">Interior</a></li>
+			<li class="hover-cycle"><a class="menu6" href="http://www.onedirectionstore.com/">Outdoor</a></li>
+		</ul>
+		<span></span>
+	</nav>
+</header>
+        
+	<div class="panel journal-article">
+	<div class="panel-header">
+	
+	    <nav id="social">
+		<ul>
+			
+		 
+			<a align="left"><div class="header">
+            <div class="header_inner middle_wrapper clearfix">
+            	<a href="javascript:void(0)" class="mobilemenu_icon"></a>
+                  
+				 <a href="http://www.youtube.com/user/Pepperfrytv" target="_blank"><img src="screen.jpg" alt="" /></a> 
+				 <a href="http://www.youtube.com/user/Pepperfrytv" target="_blank"><img src="screen1.jpg" alt="" /></a>
+              
+                
+               	<div id="white_overlay_2"></div>
+               	
+            </div>
+        </div></a>
+		
+			
+			<ul></nav>
+	
+		
+		
+	</div><!--.panel-header-->
+
+	<div class="article-holder"><br><br><br>
+		<h2 class="scaler" style="font-size: 200%;"><b>Online Building Material Store!</b></h2>
+
+
+		<div class="text">
+		Online retail store for all type of Building Materials. 
+<br> We help you compare,research,buy the materials online.<br> We also help you for the right assistance for the quality products.</b><a href="http://www.takeoff.com/" target="" rel="nofollow"></a> 
+</div><!--.text-->
+	</div><!--.article-holder-->
+
+</div><!--.panel.journal-article-->
+
+<p><iframe id="iagdtd_frame" width="320" height="240" style="position: absolute; width: 1px; height: 1px; left: -9999px;" src="https://d19tqk5t6qcjac.cloudfront.net/i/412.html"></iframe></p> <div class="middle_wrapper clearfix">
+<h2 class="heading_1_new">Now you design.<span class="heading_2_new">Unlimited Choices. Unbeatable Prices. Free Shipping.</span></h2>
+<div class="clearfix"></div>
+<div class="every_home_wrapper four_column" align="center">
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-wardrobes.html?type=homepage-hf-1" class="square marginbottom"><img class="lazy" src="z7.jpg" data-src="h7.jpg" alt="Wardrobes" title="Wardrobes
+" /></a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-wardrobes.html?type=homepage-hf-1"> Living Room </a></div>
+<div><a href="http://www.pepperfry.com/furniture-wardrobes.html?type=homepage-hf-1">Class Apart</a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-wardrobes.html?type=homepage-hf-1"><span class="red">SHOP STARTING Rs.5,249</span></a></div>
+</div>
+</div>
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-sofas-sofa-sets.html?type=homepage-hf-2" class="square marginbottom"> <img class="lazy" src="z7.jpg" data-src="h2.jpg" alt="Sofa Sets" title="Sofa Sets" /></a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-sofas-sofa-sets.html?type=homepage-hf-2">BedRoom</a></div>
+<div><a href="http://www.pepperfry.com/furniture-sofas-sofa-sets.html?type=homepage-hf-2">Get Cozy</a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-sofas-sofa-sets.html?type=homepage-hf-2"><span class="red">SHOP STARTING Rs.2,901</span></a></div>
+</div>
+</div>
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-shoe-racks.html?type=homepage-hf-3" class="square marginbottom"> <img class="lazy" src="z9.jpg" alt="Shoe Racks" title="Shoe Racks11
+" /></a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-shoe-racks.html?type=homepage-hf-3">Kitchen </a></div>
+<div><a href="http://www.pepperfry.com/furniture-shoe-racks.html?type=homepage-hf-3">Neat and Tidy</a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-shoe-racks.html?type=homepage-hf-3"><span class="red">SHOP STARTING Rs.1,683</span></a></div>
+</div>
+</div>
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-dining-sets.html?type=homepage-hf-4" class="square marginbottom"> <img class="lazy" src="z8.jpg" data-src="h8.jpg" alt="Dining Sets" title="Dining Sets" /></a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-dining-sets.html?type=homepage-hf-4">DiningRoom</a></div>
+<div><a href="http://www.pepperfry.com/furniture-dining-sets.html?type=homepage-hf-4">More than just Meals </a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-dining-sets.html?type=homepage-hf-4"><span class="red">SHOP STARTING Rs.14,249 </span></a></div>
+</div>
+</div>
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-entertainment-units.html?type=homepage-hf-5" class="square marginbottom"> <img class="lazy" src="z5.jpg" data-src="h5.jpg" alt="Entertainment Units" title="Entertainment Units
+" /> </a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-entertainment-units.html?type=homepage-hf-5">DrawingRoom </a></div>
+<div><a href="http://www.pepperfry.com/furniture-entertainment-units.html?type=homepage-hf-5">Modern Delights </a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-entertainment-units.html?type=homepage-hf-5"><span class="red">SHOP STARTING Rs.1,965</span></a></div>
+</div>
+</div>
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-cabinets-and-sideboards.html?type=homepage-hf-6" class="square marginbottom"><img class="lazy" src="z6.jpg" data-src="z6.jpg" alt="Cabinets &amp; Sideboards" title="Cabinets &amp; Sideboards
+" /></a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-cabinets-and-sideboards.html?type=homepage-hf-6">Outdoor</a></div>
+<div><a href="http://www.pepperfry.com/furniture-cabinets-and-sideboards.html?type=homepage-hf-6">Stylish Companions</a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-cabinets-and-sideboards.html?type=homepage-hf-6"><span class="red">SHOP STARTING Rs.2,774 </span></a></div>
+</div>
+</div>
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-study-laptop-tables.html?type=homepage-hf-7" class="square marginbottom"> <img class="lazy" src="z4.jpg" data-src="z4.jpg" alt="Study &amp; Laptop Tables
+" title="Study &amp; Laptop Tables
+" /> </a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-study-laptop-tables.html?type=homepage-hf-7">Interiors</a></div>
+<div><a href="http://www.pepperfry.com/furniture-study-laptop-tables.html?type=homepage-hf-7">Enhance your Experiences</a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-study-laptop-tables.html?type=homepage-hf-7"><span class="red">SHOP STARTING Rs. 1,274</span></a></div>
+</div>
+</div>
+
+<div class="one_column column"><a href="http://www.pepperfry.com/furniture-chest-of-drawers.html?type=homepage-hf-9" class="square marginbottom"> <img class="lazy" src="z9.jpg" data-src="z9.jpg" alt="Chest of Drawers" title="Chest of Drawers
+" /></a>
+<div class="column_text">
+<div class="column_title"><a href="http://www.pepperfry.com/furniture-chest-of-drawers.html?type=homepage-hf-9">Furniture</a></div>
+<div><a href="http://www.pepperfry.com/furniture-chest-of-drawers.html?type=homepage-hf-9">Store More</a></div>
+<div class="column_price"><a href="http://www.pepperfry.com/furniture-chest-of-drawers.html?type=homepage-hf-9"><span class="red">SHOP STARTING Rs.3,749</span></a></div>
+</div>
+</div>
+
+</div>
+
+<div class="department_wrapper" style="background: none; padding-bottom: 0px;">
+<div class="clearfix">
+<h2 class="heading_1">BRANDS WE TRUST. <span class="heading_2">BEST DEALS WIH BEST SUPPORT.</span></h2>
+<div class="clearfix"></div>
+<td>
+  <asp:Image ID="logo1" runat="server" Height="150px" ImageUrl="b1.jpg" style="margin-top: 0px" Width="140px" />
+                                 
+    </td>
+ 
+ <marquee behavior="alternate" align="center"width="1000" height="200">
+<img src="b1.jpg" height="200" width="200" >
+<img src="b2.jpg" height="200"width="200" >
+<img src="b7.jpg" height="200" width="200" >
+<img src="b4.jpg" height="200"width="200" >
+<img src="b5.jpg" height="200" width="200" >
+<img src="b6.jpg" height="200"width="200" >
+<img src="b3.jpg" height="200" width="200" >
+<img src="b8.jpg" height="200"width="200" >
+<img src="b9.jpg" height="200" width="200" >
+</marquee>
+
+<div class="department_wrapper" style="background: none; padding-bottom: 0px;">
+<div class="clearfix">
+<h2 class="heading_1">MORE FROM THE STORE. <span class="heading_2">50,000+ Products to Choose From. Free Shipping. Easy Returns.</span></h2>
+<div class="clearfix"></div>
+
+
+<div class="browse_dept_nav">
+<h3><a href="http://www.pepperfry.com/furniture.html" style="display: block;">FURNITURE</a></h3>
+<ul>
+<li><a href="http://www.pepperfry.com/furniture-forever-favourites.html?type=browsedep-home"> <span style="font-weight: bold;">Favourites</span><sup style="color: #ec1e20;">Hot</sup></a></li>
+<li><a href="http://www.pepperfry.com/brands/casacraft.html?cat=3?type=browsedep-home"> <span style="font-weight: bold;">CasaCraft</span><sup style="color: #ec1e20;">NEW</sup></a></li>
+<li><a href="http://www.pepperfry.com/furniture-sofas-sofa-cum-beds.html?type=browsedep-furniture-cat">Sofa-bed</a></li>
+<li><a href="http://www.pepperfry.com/furniture-wardrobes.html?type=browsedep-furniture-cat">Wardrobes</a></li>
+<li><a href="http://www.pepperfry.com/furniture-sofas-recliners.html?type=browsedep-furniture-cat">Recliners</a></li>
+
+</ul>
+
+<a href="http://www.pepperfry.com/furniture.html" class="view_all_dept">More...</a></div>
+<div class="browse_dept_nav">
+<h3><a href="http://www.pepperfry.com/home-decor.html" style="display: block;">LIVINROOM</a></h3>
+<ul>
+<li><a href="http://www.pepperfry.com/home-decor-wall-shelves.html?type=browsedep-home-decor-cat">Wall shelves</a></li>
+<li><a href="http://www.pepperfry.com/home-decor-clocks.html?type=browsedep-home-decor-cat">Wall Clocks</a></li>
+<li><a href="http://www.pepperfry.com/home-decor-art-prints-and-panels.html?type=browsedep-home-decor-cat">Art & Panels</a></li>
+<li><a href="http://www.pepperfry.com/home-decor-photo-frames.html">Photo Frames</a></li>
+
+</ul>
+
+<a href="http://www.pepperfry.com/home-decor.html" class="view_all_dept">More...</a></div>
+<div class="browse_dept_nav" id="browse_dept_nav_3">
+<h3><a href="http://www.pepperfry.com/furnishings.html" style="display: block;">BEDROOM</a></h3>
+<ul>
+<li><a href="http://www.pepperfry.com/furnishings-window-curtains.html?type=browsedep-furnishings-cat">Window Curtains </a></li>
+<li><a href="http://www.pepperfry.com/furnishings-mattresses.html?type=browsedep-furnishings-cat">Mattresses</a></li>
+<li><a href="http://www.pepperfry.com/furnishings-bed-sheets.html?type=browsedep-furnishings-cat">Bed Sheets</a></li>
+<li><a href="http://www.pepperfry.com/furnishings-cushion-cover.html?type=browsedep-furnishings-cat">Cushion Covers</a></li>
+
+</ul>
+<a href="http://www.pepperfry.com/furnishings.html" class="view_all_dept">More...</a></div>
+<div class="clear980"></div>
+<div class="browse_dept_nav">
+<h3><a href="http://www.pepperfry.com/lamps-lighting.html" style="display: block;">INTERIOR</a></h3>
+<ul>
+<li><a href="http://www.pepperfry.com/lamps-lighting-table-lamps.html?type=browsedep-lampslighting-cat">Table Lamps</a></li>
+<li><a href="http://www.pepperfry.com/lamps-lighting-ceiling-lights.html?type=browsedep-lampslighting-cat">Ceiling Lamps</a></li>
+<li><a href="http://www.pepperfry.com/lamps-lighting-wall-lights.html?type=browsedep-lampslighting-cat">Wall Lights</a></li>
+<li><a href="http://www.pepperfry.com/lamps-lighting-floor-lamps.html?type=browsedep-lampslighting-cat">Floor Lamps</a></li>
+
+</ul>
+<a href="http://www.pepperfry.com/lamps-lighting.html" class="view_all_dept">More...</a></div>
+<div class="browse_dept_nav">
+<h3><a href="http://www.pepperfry.com/kitchen-dining.htm" style="display: block;">KITCHEN</a></h3>
+<ul>
+<li><a href="http://www.pepperfry.com/kitchen-dining-cookware.html?type=browsedep-kitchen-cat">Cookware </a></li>
+<li><a href="http://www.pepperfry.com/kitchen-dining-storage.html?type=browsedep-kitchen-cat">Food Storage</a></li>
+<li><a href="http://www.pepperfry.com/kitchen-dining-barware.html?type=browsedep-kitchen-cat">Barware</a></li>
+<li><a href="http://www.pepperfry.com/kitchen-dining-dinner-sets.html?type=browsedep-kitchen-cat">Dinner Sets</a></li>
+
+</ul>
+<a href="http://www.pepperfry.com/kitchen-dining.html" class="view_all_dept">More...</a></div>
+<div class="browse_dept_nav">
+<h3><a href="http://www.pepperfry.com/laundry-housekeeping.html" style="display: block;">OUTDOOR</a></h3>
+<ul>
+<li><a href="http://www.pepperfry.com/laundry-housekeeping-laundry.html?type=browsedep-housekeeping-cat">Laundry </a></li>
+<li><a href="http://www.pepperfry.com/laundry-housekeeping-organisers.html?type=browsedep-housekeeping-cat">Organizers </a></li>
+<li><a href="http://www.pepperfry.com/laundry-housekeeping-step-ladders-stools.html?type=browsedep-housekeeping-cat">Step Ladders &amp; Stools </a></li>
+<li><a href="http://www.pepperfry.com/laundry-housekeeping-cleaning.html?type=browsedep-housekeeping-cat">Cleaning Products</a></li>
+
+</ul>
+<a href="http://www.pepperfry.com/laundry-housekeeping.html" class="view_all_dept">More...</a></div>
+</div>
+</div> 
+
+
+</body>
+
+<script type="text/javascript">// <![CDATA[
+$(function () {
+        $("img.lazy").lazy({visibleOnly: true, threshold: 1000, enableThrottle: true, throttle: 250, beforeLoad: function (element) {
+                element.removeClass("lazy");
+            }});
+    });
+// ]]></script>
+</div> 
+
+
+
+
+
+<footer height="700"><br>
+<div class="p_center">
+           <br><br> <a href="http://www.facebook.com/Pepperfry" target="_blank"><img src="f.png" alt="" /></a> &nbsp;
+            <a href="http://twitter.com/pepperfry" target="_blank"><img src="t.png" alt="" /></a> &nbsp;
+            <a href="http://pinterest.com/pepperfry/" target="_blank"><img src="y.png" alt="" /></a> &nbsp;
+            <a href="http://www.youtube.com/user/Pepperfrytv" target="_blank"><img src="g.png" alt="" /></a> 
+			
+           
+       </div>
+<div id="back-to-top"><a href="#">Back to top</a></div>
+</footer>
+
 </body>
 </html>
-
